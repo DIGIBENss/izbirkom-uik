@@ -1,0 +1,24 @@
+{
+  "name": "izbirkom-uik-parser",
+  "version": "1.0.0",
+  "description": "Парсер участковых избирательных комиссий (УИК) с izbirkom.ru в JSON",
+  "type": "module",
+  "main": "src/main.js",
+  "bin": {
+    "izbirkom-uik": "src/main.js"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "parse": "node src/main.js",
+    "test": "node --test tests/",
+    "test:e2e": "node --test tests/e2e.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["izbirkom", "uik", "parser", "playwright", "cli"],
+  "license": "MIT",
+  "dependencies": {
+    "playwright-core": "1.48.2"
+  }
+}

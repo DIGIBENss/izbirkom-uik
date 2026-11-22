@@ -1,0 +1,25 @@
+{
+  "agent": "Claude Code (desktop app, Code tab)",
+  "model": "claude-opus-5-5",
+  "permissionMode": "auto",
+  "platform": "win32 / PowerShell + Git Bash",
+  "tools": [
+    "Bash",
+    "PowerShell",
+    "Read",
+    "Write",
+    "Edit",
+    "Grep",
+    "Claude_Browser (built-in browser pane)",
+    "ccd_turn (plan / wrap-up)"
+  ],
+  "runtime": {
+    "node": "20.20.2",
+    "playwright-core": "1.48.2",
+    "browser": "system Google Chrome (channel: chrome)"
+  },
+  "constraints": [
+    "Антибот-проверку сайта не решать программно",
+    "HTTP-сайты в Chrome заблокированы в среде агента; проверка на локальном макете"
+  ]
+}
